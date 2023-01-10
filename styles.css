@@ -1,8 +1,118 @@
-/* font-family: 'Quicksand', sans-serif;
-COLORS
-light-yellow - #f7e4bf;
-light-blue - #78a7c6;
-dark-blue - #134d71;
-white - #ffffff;
-black - #000000;
-*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background: linear-gradient(#134d71, #78a7c6,  #f7e4bf );
+}
+h1, h3 {
+    color: white;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: fill;
+}
+
+.container {
+    width: min(60vw);
+    min-height: 90vh;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+.type-msg {
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px ;
+}
+ #btn , #btn2 {
+    padding: 5px 12px;
+    background-color: #134d71;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+.div1 {
+    width: min(40vw, 100%);
+    min-height: 10vh ;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: flex-start;
+    background-color: white;
+    border-radius: 10px;
+}
+.option , .option2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.div2 {
+    width: min(60vw);
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+
+
+}
+.div2 img {
+    width: min(50px, 100%);
+}
+.button {
+    display: flex;
+    gap: 10px ;
+    align-self: flex-end;
+}
+
+@media (max-width: 800px) {
+    .container {
+        display: flex;
+        flex-direction:column ;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        gap: 30px;
+    }
+    .type-msg , .div1 , .div2, .msg{
+        width: 100%;
+    }
+    .div1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .button {
+        flex-direction: column;
+        align-self: center;
+    }
+    button{
+        text-align: center;
+        width: 100%;
+
+    }
+ 
+}

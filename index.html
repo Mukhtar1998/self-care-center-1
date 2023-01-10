@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-  
-    <script type="text/javascript" src="main.js"></script>
-  </body>
+	<head>
+		<link rel="stylesheet" href="styles.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+			rel="stylesheet" />
+	</head>
+	<body>
+		<section>
+			<div class="container">
+				<h1>Self Care center</h1>
+				<div class="type-msg">
+					<h3>Which type of message?</h3>
+					<div class="div1">
+						<div class="option">
+							<input
+								id="affirBtn"
+								type="radio"
+								checked="checked"
+								name="check button" />
+							<label for="affirBtn" value="affirmation">affirmation</label>
+						</div>
+						<div class="button">
+							<button id="btn">Recevie message?</button>
+							<button id="btn2">Clear message</button>
+						</div>
+						<div class="option2">
+							<input name="check button" id="mantBtn" type="radio" />
+							<label for="mantBtn" value="mantra">mantra</label>
+						</div>
+					</div>
+				</div>
+				<div class="div2" id="div2">
+					<img src="./images/meditate.svg" id="img" alt="bell" />
+				</div>
+			</div>
+		</section>
+
+		<form action="action">
+			<input id="input" type="radio" value="affirBtn" />affirBtn
+			<input type="radio" value="mantBtn" />mantBtn
+		</form>
+		<script type="text/javascript" src="main.js"></script>
+	</body>
 </html>
